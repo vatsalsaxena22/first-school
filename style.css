@@ -7,7 +7,7 @@
 
 body{
     margin: 0;
-    font-family: cursive;
+    font-family: sans-serif;
     background-color: var(--color2);
 }
 header{
@@ -18,7 +18,7 @@ header{
 }
 header h1{
     color: var(--color3);
-    font-family: 'Lucida handwriting';
+    font-family: cursive;
 }
 header img{
     width: 50px;
