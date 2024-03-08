@@ -1,0 +1,236 @@
+:root{
+    --color1: rgb(225, 0, 0);
+    --color2: rgb(0, 128, 255);
+    --color3: rgb(255, 255, 80);
+    --color4: rgb(255, 255, 255);
+}
+
+body{
+    margin: 0;
+    font-family: cursive;
+    background-color: var(--color2);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header h1{
+    color: var(--color3);
+    font-family: 'Lucida handwriting';
+}
+header img{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color3);
+    border: 5px solid var(--color1);
+    border-radius: 50%;
+}
+nav{
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+}
+.nav-items a{
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-items .active{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+.nav-left a{
+    color: var(--color1);
+}
+.nav-left a:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+.nav-right a{
+    color: var(--color1);
+}
+.nav-right a:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+main{
+    background-color: var(--color3);
+    margin: 10px 0;
+    padding: 10px;
+    color: var(--color2);
+}
+.content{
+    background-color: var(--color3);
+    margin: 10px 0;
+    padding: 10px;
+    color: var(--color1);
+}
+.box-case{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    width: 200px;
+    padding: 70px;
+    border: 5px solid var(--color1);
+    text-align: center;
+}
+.box a{
+    text-decoration: none;
+    color: var(--color3);
+    background-color: var(--color1);
+    padding: 10px;
+    text-wrap: nowrap;
+}
+.box a:hover{
+    background-color: var(--color2);
+}
+#box1{
+    background: url(./img/Animals.jpg);
+}
+#box2{
+    background: url(./img/Birds.jpg);
+}
+#box3{
+    background: url(./img/Waters.jpeg);
+}
+#box4{
+    background: url(./img/flowers.jpg);
+}
+#box5{
+    background: url(./img/Trees.jpg);
+}
+footer{
+    margin: 0;
+    padding: 10px;
+    border-top: 10px solid var(--color3);
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color3);
+}
+footer .footer-logo{
+    width: 50px;
+    background-color: var(--color3);
+    border: 5px solid var(--color1);
+    border-radius: 50%;
+}
+footer .vs{
+    color: var(--color4);
+    font-weight: bold;
+    text-decoration: none;
+}
+footer .vs:hover{
+    text-decoration: underline;
+}
+footer .fa-brands{
+    color: var(--color4);
+}
+footer .fa-brands:hover{
+    color: var(--color1);
+}
+footer .end-note{
+    font-family: serif;
+}
+
+/* CSS for Subsites */
+main button{
+    background-color: var(--color1);
+    padding: 10px;
+    border: 2px solid var(--color3);
+    border-radius: 10%;
+}
+main button a{
+    color: var(--color3);
+    text-decoration: none;
+    padding: 10px 0;
+}
+main button:hover{
+    background-color: var(--color2);
+}
+
+.photo-case{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.photo{
+    border: 5px solid var(--color1);
+    text-align: center;
+}
+.photo img{
+    width: 250px;
+    height: 200px;
+}
+
+/* CSS for About Page */
+.about{
+    background-color: var(--color1);
+    padding: 20px;
+    color: var(--color3);
+}
+.about h1, .about h2{
+    text-align: center;
+}
+.about a{
+    color: var(--color3);
+}
+.about a:hover{
+    font-style: italic;
+}
+
+/* CSS for Contact Page */
+.contact{
+    margin: 0 10px;
+    color: var(--color3);
+    line-height: 1.75;
+    text-align: center;
+}
+.contact hr{
+    border-color: var(--color3);
+}
+.contact a{
+    color: var(--color2);
+    background-color: var(--color3);
+    text-decoration: none;
+    padding: 5px;
+    border: 2px ridge var(--color1);
+}
+.contact a:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+
+
+
+
+
+
+/* CSS for Mobile */
+@media screen and (max-width: 455px) {
+    header{
+        position: sticky;
+        top: 0;
+        background-color: var(--color2);
+    }
+    nav{
+        position: sticky;
+        top: 80px;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        text-wrap:nowrap;
+    }
+    main h1{
+        text-align: center;
+    }
+    .photo-case{
+        justify-content: center;
+    }
+}

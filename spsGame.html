@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissors Game</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body {
+            text-align: center;
+            background-color: yellow;
+            color: blue;
+            font-family: cursive;
+            border: 10px dashed red;
+            margin: 30px;
+        }
+
+        h1{
+            background-color: blue;
+            color: yellow;
+        }
+        button {
+            padding: 10px;
+            font-weight: bolder;
+            color: yellow;
+            background-color: red;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        span {
+            color: red;
+        }
+
+        #result {
+            color: yellow;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Stone Paper Scissors Game</h1>
+    <hr>
+    <h2>Choose any one:</h2>
+    <button onclick="spsMachine('Stone')
+    document.getElementById('youchoose').innerHTML = 'Stone'">Stone</button>
+    <button onclick="spsMachine('Paper')
+    document.getElementById('youchoose').innerHTML = 'Paper'">Paper</button>
+    <button onclick="spsMachine('Scissors')
+    document.getElementById('youchoose').innerHTML = 'Scissors'">Scissors</button>
+    <hr />
+    <h2>You Choose: <span id="youchoose"></span> </h2>
+    <h2>Computer's Choice: <span id="computerchoose"></span></h2>
+
+    <h1 id="result"></h1>
+
+    <script>
+        {
+            function spsMachine(name) {
+                let randomNumber = Math.random() * 3;
+                let userChoice = name;
+                let computerChoice = spsRandomiser();
+                let result = spsDecision(userChoice);
+
+                console.log(userChoice);
+                console.log(randomNumber);
+                // console.log(spsRandomiser());
+                console.log(computerChoice);
+                // console.log(spsDecision());
+                console.log(result);
+
+                document.getElementById('computerchoose').innerHTML = computerChoice;
+                document.getElementById('result').innerHTML = result;
+
+                function spsRandomiser() {
+                    if (randomNumber > 2) {
+                        return 'Stone';
+                    } else if (randomNumber > 1) {
+                        return 'Paper';
+                    } else {
+                        return 'Scissors';
+                    }
+                }
+
+                function spsDecision(choice) {
+                    if (choice === 'Stone') {
+                        if (computerChoice === 'Stone') {
+                            return 'Tie!';
+                        } else if (computerChoice === 'Paper') {
+                            return 'You Lose!';
+                        } else {
+                            return 'You Won!';
+                        }
+                    } else if (choice === 'Paper'){
+                        if (computerChoice === 'Paper'){
+                            return 'Tie!';
+                        } else if (computerChoice === 'Scissors'){
+                            return 'You Lose!';
+                        } else {
+                            return 'You Won!'
+                        }
+                    } else {
+                        if (computerChoice === 'Scissors'){
+                            return 'Tie!';
+                        } else if (computerChoice === 'Stone'){
+                            return 'You Lose!';
+                        } else {
+                            return 'You Won!'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
