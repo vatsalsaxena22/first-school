@@ -1,8 +1,8 @@
 :root{
     --color1: rgb(225, 0, 0);
-    --color2: rgb(0, 128, 255);
-    --color3: rgb(255, 255, 80);
-    --color4: rgb(255, 255, 255);
+    --color2: rgb(0, 125, 255);
+    --color3: rgb(255, 255, 255);
+    --color4: #bbb;
 }
 
 body{
@@ -15,6 +15,9 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--color2);
 }
 header h1{
     color: var(--color3);
@@ -28,9 +31,11 @@ header img{
     border-radius: 50%;
 }
 nav{
-    background-color: var(--color3);
+    background-color: var(--color4);
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 87.68px;
 }
 .nav-items{
     display: flex;
@@ -38,6 +43,7 @@ nav{
 .nav-items a{
     text-decoration: none;
     padding: 10px;
+    font-weight: bold;
 }
 .nav-items .active{
     background-color: var(--color1);
@@ -121,7 +127,7 @@ footer .footer-logo{
     border-radius: 50%;
 }
 footer .vs{
-    color: var(--color4);
+    color: var(--color3);
     font-weight: bold;
     text-decoration: none;
 }
@@ -129,7 +135,7 @@ footer .vs:hover{
     text-decoration: underline;
 }
 footer .fa-brands{
-    color: var(--color4);
+    color: var(--color3);
 }
 footer .fa-brands:hover{
     color: var(--color1);
@@ -215,20 +221,16 @@ main button:hover{
 
 /* CSS for Mobile */
 @media screen and (max-width: 455px) {
-    header{
-        position: sticky;
-        top: 0;
-        background-color: var(--color2);
-    }
     nav{
-        position: sticky;
-        top: 80px;
         overflow-x: scroll;
-        justify-content: flex-start;
-        text-wrap:nowrap;
+        justify-content: space-between;
+        text-wrap: nowrap;
     }
     main h1{
         text-align: center;
+    }
+    .box-case{
+        justify-content: center;
     }
     .photo-case{
         justify-content: center;
