@@ -225,6 +225,7 @@ main button:hover{
         overflow-x: scroll;
         justify-content: space-between;
         text-wrap: nowrap;
+        top: 80px;
     }
     main h1{
         text-align: center;
