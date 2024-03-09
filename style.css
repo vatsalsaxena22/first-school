@@ -65,14 +65,14 @@ nav{
 }
 main{
     background-color: var(--color3);
-    margin: 10px 0;
     padding: 10px;
     color: var(--color2);
+    text-align: center;
 }
 .content{
     background-color: var(--color3);
-    margin: 10px 0;
     padding: 10px;
+    border-top: 2px solid var(--color2);
     color: var(--color1);
 }
 .box-case{
