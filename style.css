@@ -10,17 +10,16 @@ body{
     font-family: sans-serif;
 }
 header{
+    background-color: var(--color3);
+    position: sticky;
+    top: 0;
+}
+header .title{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    position: sticky;
-    top: 0;
-    background-color: var(--color2);
-}
-header h1{
-    color: var(--color3);
-    font-family: cursive;
+    color: var(--color1);
 }
 header img{
     width: 50px;
@@ -30,48 +29,36 @@ header img{
     border-radius: 50%;
 }
 nav{
-    background-color: var(--color4);
+    border: 2px solid var(--color2);
     display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 87.68px;
-}
-.nav-items{
-    display: flex;
-}
-.nav-items a{
-    text-decoration: none;
-    padding: 10px;
     font-weight: bold;
 }
-.nav-items .active{
-    background-color: var(--color1);
-    color: var(--color3);
-}
-.nav-left a{
+nav a{
+    text-decoration: none;
     color: var(--color1);
+    padding: 10px;
 }
-.nav-left a:hover{
+nav a:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+nav .active{
     background-color: var(--color1);
     color: var(--color3);
 }
-.nav-right a{
-    color: var(--color1);
-}
-.nav-right a:hover{
+nav .active:hover{
     background-color: var(--color1);
-    color: var(--color3);
 }
 main{
-    background-color: var(--color3);
+    background-color: var(--color2);
+    margin: 10px 0;
     padding: 10px;
-    color: var(--color2);
+    color: var(--color3);
     text-align: center;
 }
 .content{
     background-color: var(--color3);
     padding: 10px;
-    border-top: 2px solid var(--color2);
     color: var(--color1);
 }
 .box-case{
@@ -144,18 +131,24 @@ footer .end-note{
 }
 
 /* CSS for Subsites */
-main button{
+.names{
+    color: var(--color2);
+    text-align: center;
+    padding: 10px;
+}
+.names button{
     background-color: var(--color1);
     padding: 10px;
     border: 2px solid var(--color3);
     border-radius: 10%;
 }
-main button a{
+.names button a{
     color: var(--color3);
     text-decoration: none;
     padding: 10px 0;
+    font-weight: bold;
 }
-main button:hover{
+.names button:hover{
     background-color: var(--color2);
 }
 
@@ -176,15 +169,20 @@ main button:hover{
 
 /* CSS for About Page */
 .about{
-    background-color: var(--color1);
-    padding: 20px;
-    color: var(--color3);
+    background-color: var(--color3);
+    margin: 10px 0;
+    padding: 5px;
+    color: var(--color1);
 }
-.about h1, .about h2{
+.about h1{
+    background-color: var(--color2);
+    padding: 10px;
+    margin: 0;
+    color: var(--color3);
     text-align: center;
 }
 .about a{
-    color: var(--color3);
+    color: var(--color1);
 }
 .about a:hover{
     font-style: italic;
@@ -193,9 +191,13 @@ main button:hover{
 /* CSS for Contact Page */
 .contact{
     margin: 0 10px;
-    color: var(--color3);
+    color: var(--color2);
     line-height: 1.75;
     text-align: center;
+}
+.contact h1{
+    background-color: var(--color2);
+    color: var(--color3);
 }
 .contact hr{
     border-color: var(--color3);
@@ -211,10 +213,6 @@ main button:hover{
     background-color: var(--color1);
     color: var(--color3);
 }
-
-
-
-
 
 
 

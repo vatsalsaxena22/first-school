@@ -19,17 +19,16 @@
             font-family: sans-serif;
         }
         header{
+            background-color: var(--color3);
+            position: sticky;
+            top: 0;
+        }
+        header .title{
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            position: sticky;
-            top: 0;
-            background-color: var(--color2);
-        }
-        header h1{
-            color: var(--color3);
-            font-family: cursive;
+            color: var(--color1);
         }
         header img{
             width: 50px;
@@ -39,37 +38,25 @@
             border-radius: 50%;
         }
         nav{
-            background-color: var(--color4);
+            border: 2px solid var(--color2);
             display: flex;
-            justify-content: space-between;
-            position: sticky;
-            top: 87.68px;          
-        }
-        .nav-items{
-            display: flex;
-        }
-        .nav-items a{
-            text-decoration: none;
-            padding: 10px;
             font-weight: bold;
         }
-        .nav-items .active{
-            background-color: var(--color1);
-            color: var(--color3);
-        }
-        .nav-left a{
+        nav a{
+            text-decoration: none;
             color: var(--color1);
+            padding: 10px;
         }
-        .nav-left a:hover{
+        nav a:hover{
+            background-color: var(--color2);
+            color: var(--color3);
+        }
+        nav .active{
             background-color: var(--color1);
             color: var(--color3);
         }
-        .nav-right a{
-            color: var(--color1);
-        }
-        .nav-right a:hover{
+        nav .active:hover{
             background-color: var(--color1);
-            color: var(--color3);
         }
         .info{
             margin: 10px;
@@ -164,21 +151,19 @@
 
 <body>
     <header>
-        <img src="./favicon.png" alt="logo">
-        <h1>First School | Stone Paper Scissors</h1>
-    </header>
-
-    <nav>
-        <div class="nav-left nav-items">
+        <div class="title">
+            <img src="./favicon.png" alt="logo">
+            <h1>First School</h1>
+        </div>
+        <nav>
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
-        </div>
-        <div class="nav-right nav-items">
             <a href="https://alphabet-v2.netlify.app" target="_blank">Alphabet</a>
             <a href="#" class="active">Game !</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
     <div class="game">
         <div class="game-body">
             <div class="info">
