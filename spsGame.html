@@ -73,7 +73,6 @@
         }
         .game{
             display: flex;
-            font-family: cursive;
             margin: 10px;
         }
         .game-body{
@@ -82,6 +81,7 @@
             border: 10px solid var(--color2);
             width: 75%;
             margin: 10px;
+            font-weight: bold;
         }
         .game-data{
             text-align: center;
@@ -160,7 +160,7 @@
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
             <a href="https://alphabet-v2.netlify.app" target="_blank">Alphabet</a>
-            <a href="#" class="active">Game !</a>
+            <a href="#" class="active">Game</a>
         </nav>
     </header>
 
@@ -180,13 +180,11 @@
         </div>
         <div class="game-data">
             <h1>Your Scores</h1>
-            <!-- <hr> -->
             <h2>Win : <span id="win"></span></h2>
             <h2>Lose : <span id="lose"></span></h2>
             <h2>Tie : <span id="tie"></span></h2>
-            <hr>
+
             <button onclick="resetScore();">Reset Score</button>
-            <hr>
         </div>
     </div>
 

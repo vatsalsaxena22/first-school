@@ -171,7 +171,7 @@ footer .end-note{
 .about{
     background-color: var(--color3);
     margin: 10px 0;
-    padding: 5px;
+    padding: 10px 20px;
     color: var(--color1);
 }
 .about h1{
