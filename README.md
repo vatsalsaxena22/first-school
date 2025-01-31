@@ -33,4 +33,4 @@ To run this project locally:
 ### Contributing:
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
-For Live Preview at [First School Website](https://github.com/vatsalsaxena22/first-school).
+For Live Preview at [First School Website](https://vatsalsaxena22.github.io/first-school/).
